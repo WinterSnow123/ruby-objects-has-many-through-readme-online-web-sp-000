@@ -70,7 +70,7 @@ class Waiter
 end
 
   def has_served_a_meal?
-    self.meals != nil
+    self.meals != []
   end
 
 end
