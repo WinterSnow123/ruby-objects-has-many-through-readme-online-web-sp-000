@@ -44,7 +44,7 @@ class Waiter
 
   def worst_tipped_meal
     if self.has_served_a_meal?
-      self.meals.sort{|meal| meal.tip}[0]
+      self.meals.sort{|a,b| a.tip <=> b.tip}[0]
     else
       "You have not served any meals yet."
     end
